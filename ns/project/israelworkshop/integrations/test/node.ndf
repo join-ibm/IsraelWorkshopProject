@@ -15,6 +15,26 @@
       <value name="form_qualified">false</value>
       <value name="is_global">false</value>
       <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">field</value>
+          <value name="node_subtype">unknown</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+            <value name="field_usereditable">false</value>
+            <value name="id">ba546330-1faa-11f1-8ba4-0b9439f2c182</value>
+          </record>
+          <value name="is_public">false</value>
+          <value name="field_name">order</value>
+          <value name="field_type">recref</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <value name="modifiable">true</value>
+          <value name="rec_ref">com.partner.backend.doc:order</value>
+        </record>
       </array>
       <value name="modifiable">true</value>
     </record>
@@ -45,9 +65,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Jose.Miguel.Indave@ibm.com</value>
-    <value name="createdDate">1773495272859</value>
-    <value name="lastModifiedDate">1773495272859</value>
+    <value name="lastModifiedBy">Jose.Miguel.Indave@ibm.com</value>
+    <value name="lastModifiedDate">1773495372416</value>
     <value name="displayName">test</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -67,6 +86,8 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
       </record>
     </record>
   </record>
