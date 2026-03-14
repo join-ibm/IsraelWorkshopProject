@@ -10,17 +10,18 @@
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="PartnerBackend">1.0</value>
+    <value name="WmJDBCAdapter">10.3.0.0.34</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">11</value>
+  <value name="build">12</value>
   <null name="description"/>
   <value name="created_date">09-03-2026 19:53:40 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-03-14T13:45:30.823633326Z</value>
+  <value name="lastUpdated">2026-03-14T13:45:44.608282478Z</value>
   <value name="wmProjectId">flcabf1000ad6c0279639aa5</value>
   <value name="creator">Jose Miguel Indave</value>
 </Values>
