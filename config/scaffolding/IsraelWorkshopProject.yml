@@ -7,3 +7,8 @@ packages:
   gitUrl: https://github.com/join-ibm
   gitUsername: join-ibm
   gitBranch: main
+- name: PartnerBackend
+  gitServerName: F2F_Repo
+  gitUrl: https://github.com/join-ibm
+  gitUsername: join-ibm
+  gitBranch: main
