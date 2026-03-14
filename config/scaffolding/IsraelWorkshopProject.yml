@@ -2,6 +2,11 @@ version: "1.0"
 info:
   model: int-scaffold
 packages:
+- name: PartnerBackend
+  gitServerName: F2F_Repo
+  gitUrl: https://github.com/join-ibm
+  gitUsername: join-ibm
+  gitBranch: main
 - name: IsraelWorkshopProject
   gitServerName: F2F_Repo
   gitUrl: https://github.com/join-ibm
