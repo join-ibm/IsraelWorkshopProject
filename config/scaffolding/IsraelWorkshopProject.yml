@@ -14,14 +14,17 @@ packages:
   gitUsername: join-ibm
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: PartnerFrontend
+  version: "1.0"
   gitServerName: F2F_Repo
   gitUrl: https://github.com/join-ibm
   gitUsername: join-ibm
   gitBranch: main
 - name: PartnerTracing
+  version: "1.0"
   gitServerName: F2F_Repo
   gitUrl: https://github.com/join-ibm
   gitUsername: join-ibm
@@ -33,6 +36,10 @@ services:
     version: "1.0"
   - name: PartnerBackend
     version: "1.0"
+  - name: PartnerTracing
+    version: "1.0"
+  - name: PartnerFrontend
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -43,6 +50,10 @@ services:
     version: "1.0"
   - name: PartnerBackend
     version: "1.0"
+  - name: PartnerTracing
+    version: "1.0"
+  - name: PartnerFrontend
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -51,88 +62,50 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2105
-- serviceName: project.israelworkshop.integrations:test
-  packages:
-  - name: IsraelWorkshopProject
-    version: "1.0"
-  - name: PartnerBackend
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
-- serviceName: com.partner.backend.svc:OrderProcessing
-  packages:
-  - name: PartnerBackend
-    version: "1.0"
-- serviceName: com.partner.backend.db:get_customer_db
-  packages:
-  - name: PartnerBackend
-    version: "1.0"
-- serviceName: com.partner.backend.system_A.system_A_.connectors:inventoryAssets_GET_3
-  packages:
-  - name: PartnerBackend
-    version: "1.0"
-- serviceName: pub.client:restClient
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2105
-- serviceName: pub.flow:clearPipeline
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2105
-- serviceName: com.partner.backend.svc.utils:compute_price
-  packages:
-  - name: PartnerBackend
-    version: "1.0"
-- serviceName: pub.flow:getLastError
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2105
 configurationVariables:
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.password
-  : "{AES}9FD6jH4J5SdI43FT9mCVPWmK1wuN3U1rA1B0VhuZoUw="
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.keyStore
   : ""
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.heartBeatInterval
   : "0"
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.otherProperties
-  : loginTimeout=60;
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.user
   : superipaas
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.serverName
-  : iwhi-database-server.database.windows.net
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.trustStore
-  : ""
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.maximumPoolSize
   : "10"
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.minimumPoolSize
-  : "1"
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.datasourceClass
   : com.microsoft.sqlserver.jdbc.SQLServerDataSource
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.transactionType
-  : NO_TRANSACTION
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.trustStore
+  : ""
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.networkProtocol
   : IWHI_database
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionEnabled
-  : "false"
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.dbType
   : MSSQL
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.databaseName
-  : ""
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.portNumber
-  : "1433"
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.driverType
   : SQLServerDataSource
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.password
+  : "{AES}9FD6jH4J5SdI43FT9mCVPWmK1wuN3U1rA1B0VhuZoUw="
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.serverName
+  : iwhi-database-server.database.windows.net
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionEnabled
+  : "true"
+  ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionSettings.databaseName
+  : ""
   ? artConnection.IsraelWorkshopProject.project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Azure_database.connectionManagerSettings.poolIncrementSize
   : "1"
