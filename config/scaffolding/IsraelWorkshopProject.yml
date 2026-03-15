@@ -21,6 +21,11 @@ packages:
   gitUrl: https://github.com/join-ibm
   gitUsername: join-ibm
   gitBranch: main
+- name: PartnerTracing
+  gitServerName: F2F_Repo
+  gitUrl: https://github.com/join-ibm
+  gitUsername: join-ibm
+  gitBranch: main
 services:
 - serviceName: project.israelworkshop.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Azure_database
   packages:
