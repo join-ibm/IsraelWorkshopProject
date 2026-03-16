@@ -22,44 +22,6 @@
       <value name="form_qualified">false</value>
       <value name="is_global">false</value>
       <array name="rec_fields" type="record" depth="1">
-        <record javaclass="com.wm.util.Values">
-          <value name="node_type">record</value>
-          <value name="node_subtype">unknown</value>
-          <value name="node_comment"></value>
-          <record name="node_hints" javaclass="com.wm.util.Values">
-            <value name="field_largerEditor">false</value>
-            <value name="field_password">false</value>
-            <value name="field_usereditable">true</value>
-          </record>
-          <value name="is_public">false</value>
-          <value name="field_name">a</value>
-          <value name="field_type">string</value>
-          <value name="field_dim">0</value>
-          <array name="field_options" type="record" depth="1">
-          </array>
-          <value name="nillable">true</value>
-          <value name="form_qualified">false</value>
-          <value name="is_global">false</value>
-        </record>
-        <record javaclass="com.wm.util.Values">
-          <value name="node_type">record</value>
-          <value name="node_subtype">unknown</value>
-          <value name="node_comment"></value>
-          <record name="node_hints" javaclass="com.wm.util.Values">
-            <value name="field_largerEditor">false</value>
-            <value name="field_password">false</value>
-            <value name="field_usereditable">true</value>
-          </record>
-          <value name="is_public">false</value>
-          <value name="field_name">b</value>
-          <value name="field_type">string</value>
-          <value name="field_dim">0</value>
-          <array name="field_options" type="record" depth="1">
-          </array>
-          <value name="nillable">true</value>
-          <value name="form_qualified">false</value>
-          <value name="is_global">false</value>
-        </record>
       </array>
       <value name="modifiable">true</value>
     </record>
@@ -80,44 +42,6 @@
       <value name="form_qualified">false</value>
       <value name="is_global">false</value>
       <array name="rec_fields" type="record" depth="1">
-        <record javaclass="com.wm.util.Values">
-          <value name="node_type">record</value>
-          <value name="node_subtype">unknown</value>
-          <value name="node_comment"></value>
-          <record name="node_hints" javaclass="com.wm.util.Values">
-            <value name="field_largerEditor">false</value>
-            <value name="field_password">false</value>
-            <value name="field_usereditable">true</value>
-          </record>
-          <value name="is_public">false</value>
-          <value name="field_name">c</value>
-          <value name="field_type">string</value>
-          <value name="field_dim">0</value>
-          <array name="field_options" type="record" depth="1">
-          </array>
-          <value name="nillable">true</value>
-          <value name="form_qualified">false</value>
-          <value name="is_global">false</value>
-        </record>
-        <record javaclass="com.wm.util.Values">
-          <value name="node_type">record</value>
-          <value name="node_subtype">unknown</value>
-          <value name="node_comment"></value>
-          <record name="node_hints" javaclass="com.wm.util.Values">
-            <value name="field_largerEditor">false</value>
-            <value name="field_password">false</value>
-            <value name="field_usereditable">true</value>
-          </record>
-          <value name="is_public">false</value>
-          <value name="field_name">d</value>
-          <value name="field_type">string</value>
-          <value name="field_dim">0</value>
-          <array name="field_options" type="record" depth="1">
-          </array>
-          <value name="nillable">true</value>
-          <value name="form_qualified">false</value>
-          <value name="is_global">false</value>
-        </record>
       </array>
       <value name="modifiable">true</value>
     </record>
@@ -137,7 +61,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Jose.Miguel.Indave@ibm.com</value>
-    <value name="lastModifiedDate">1773558089753</value>
+    <value name="lastModifiedDate">1773661063327</value>
     <value name="displayName">Logging_flow</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -162,6 +86,7 @@
         <null name="outputMapSet"/>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <value name="nodePathForDebug">0</value>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
       </record>
     </record>
   </record>
