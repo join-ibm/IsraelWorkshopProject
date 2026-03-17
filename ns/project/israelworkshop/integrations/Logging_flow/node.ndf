@@ -35,7 +35,7 @@
           <value name="field_name">num1</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
-          <array name="field_options" type="value" depth="1">
+          <array name="field_options" type="record" depth="1">
           </array>
           <value name="nillable">true</value>
           <value name="form_qualified">false</value>
@@ -54,7 +54,7 @@
           <value name="field_name">num2</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
-          <array name="field_options" type="value" depth="1">
+          <array name="field_options" type="record" depth="1">
           </array>
           <value name="nillable">true</value>
           <value name="form_qualified">false</value>
@@ -93,7 +93,7 @@
           <value name="field_name">result</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
-          <array name="field_options" type="value" depth="1">
+          <array name="field_options" type="record" depth="1">
           </array>
           <value name="nillable">true</value>
           <value name="form_qualified">false</value>
@@ -118,7 +118,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Jose.Miguel.Indave@ibm.com</value>
-    <value name="lastModifiedDate">1773739076644</value>
+    <value name="lastModifiedDate">1773739646294</value>
     <value name="displayName">Logging_flow</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -131,7 +131,6 @@
           <value name="transformerSupport">true</value>
         </record>
         <Boolean name="serviceReferenceResolved">true</Boolean>
-        <value name="nodePathForDebug">0</value>
         <value name="nodePathNew">0.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">2</number>
@@ -139,26 +138,15 @@
         <Boolean name="xmlMapsetSupported">true</Boolean>
         <null name="mapSet"/>
         <null name="outputMapSet"/>
+        <value name="nodePathForDebug">0.0</value>
       </record>
       <record name="/0/1" javaclass="com.wm.util.Values">
-        <null name="name"/>
         <value name="itemType">SERVICES</value>
-        <record name="serviceInfo" javaclass="com.wm.util.Values">
-          <value name="groupDisplayName">Math</value>
-          <value name="groupName">math</value>
-          <null name="services"/>
-        </record>
         <record name="serviceName" javaclass="com.wm.util.Values">
           <value name="displayName">addInts</value>
           <value name="serviceName">pub.math:addInts</value>
           <value name="transformerSupport">true</value>
         </record>
-        <number name="ui_step_index" type="Long">3</number>
-        <value name="nodePathNew">0.1</value>
-        <number name="nodeIndex" type="Long">1</number>
-        <number name="lineNumberForDebug" type="Long">3</number>
-        <null name="mapSet"/>
-        <null name="outputMapSet"/>
       </record>
       <null name="/1"/>
       <record name="/1/0" javaclass="com.wm.util.Values">
@@ -174,6 +162,8 @@
           <value name="serviceName">pub.flow:getLastFailureCaught</value>
           <value name="transformerSupport">false</value>
         </record>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.0</value>
       </record>
     </record>
   </record>
