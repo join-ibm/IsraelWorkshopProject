@@ -5,11 +5,6 @@
 
   <!-- nodes -->
 
-<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="TRY">
-  <COMMENT></COMMENT>
-
-  <!-- nodes -->
-
 <INVOKE NAME="Flow" TIMEOUT="" SERVICE="pub.flow:debugLog" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 
@@ -125,9 +120,4 @@
   <COMMENT></COMMENT>
 </MAP>
 </INVOKE>
-</SEQUENCE>
-
-<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="CATCH">
-  <COMMENT></COMMENT>
-</SEQUENCE>
 </FLOW>
