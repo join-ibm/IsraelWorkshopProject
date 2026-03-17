@@ -2,11 +2,6 @@ version: "1.0"
 info:
   model: int-scaffold
 packages:
-- name: IsraelWorkshopProject
-  gitServerName: F2F_Repo
-  gitUrl: https://github.com/join-ibm
-  gitUsername: join-ibm
-  gitBranch: main
 - name: PartnerBackend
   version: "1.0"
   gitServerName: F2F_Repo
@@ -30,6 +25,11 @@ packages:
   gitUsername: join-ibm
   gitBranch: main
 - name: TestLiftShift
+  gitServerName: F2F_Repo
+  gitUrl: https://github.com/join-ibm
+  gitUsername: join-ibm
+  gitBranch: main
+- name: IsraelWorkshopProject
   gitServerName: F2F_Repo
   gitUrl: https://github.com/join-ibm
   gitUsername: join-ibm
