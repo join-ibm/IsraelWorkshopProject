@@ -118,11 +118,32 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Jose.Miguel.Indave@ibm.com</value>
-    <value name="lastModifiedDate">1773816967882</value>
+    <value name="lastModifiedDate">1773825797092</value>
     <value name="displayName">Logging_flow</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
-      <record name="/0" javaclass="com.wm.util.Values">
+      <null name="/0"/>
+      <record name="/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+      </record>
+      <null name="/0/0/0"/>
+      <null name="/0/0/1"/>
+      <record name="/0/1" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
         <record name="serviceName" javaclass="com.wm.util.Values">
           <value name="displayName">debugLog</value>
@@ -130,15 +151,38 @@
           <value name="transformerSupport">true</value>
         </record>
         <Boolean name="serviceReferenceResolved">true</Boolean>
-        <value name="nodePathNew">0.0</value>
-        <number name="nodeIndex" type="Long">0</number>
-        <number name="lineNumberForDebug" type="Long">2</number>
+        <value name="nodePathNew">0.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">3</number>
         <number name="ui_step_index" type="Long">2</number>
         <Boolean name="xmlMapsetSupported">true</Boolean>
         <null name="mapSet"/>
         <null name="outputMapSet"/>
-        <value name="nodePathForDebug">0.0</value>
+        <value name="nodePathForDebug">0</value>
       </record>
+      <record name="/0/2" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Math</value>
+          <value name="groupName">math</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="transformerSupport">true</value>
+          <value name="displayName">addInts</value>
+          <value name="serviceName">pub.math:addInts</value>
+          <Boolean name="enabled">true</Boolean>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">4</number>
+        <value name="nodePathNew">0.2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">4</number>
+      </record>
+      <null name="/1"/>
+      <null name="/1/0"/>
     </record>
   </record>
   <value name="svc_in_validator_options">none</value>
